@@ -1,0 +1,29 @@
+
+.watch-too{
+    padding-top: 75px;
+    padding-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ 
+    &__fimls{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        text-align: center;
+
+        @media(max-width: 768px){
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img{
+            cursor: pointer;
+            border-radius: 4px;
+        }
+    }
+}

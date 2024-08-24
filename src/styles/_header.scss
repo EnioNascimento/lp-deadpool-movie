@@ -1,0 +1,42 @@
+
+.header{
+    padding: 5.6vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-image: url('../images/bk-header.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    @media(max-width: 768px){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__description{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        max-width: 500px;
+
+        img:first-child{
+            height: 250px;
+        }
+
+       
+    }
+
+
+    &__glass{
+        background-image: url('../../dist/images/vidro.png');
+        background-position: center right;
+        background-repeat: no-repeat;
+
+        @media(max-width: 768px){
+                 display: none;
+        }
+    
+    }
+}

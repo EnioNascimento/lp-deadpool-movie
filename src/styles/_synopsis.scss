@@ -1,0 +1,31 @@
+
+.synopsis{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+   
+    @media(max-width: 768px){
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__description{
+        height: 700px;
+        padding: 5.6vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+    }
+
+    &__image{
+        background-image: url('../images/bk-sinopse.png');
+        background-position: center left;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
